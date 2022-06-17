@@ -7,8 +7,9 @@
     <title>Personal Website</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="dist/minifiedScript.js" defer></script>
 </head>
-<body onload="getRandomDog()">
+<body onload>
     <!-- Header start -->
     <header class="header">
         <div class="wrapper">
@@ -55,26 +56,6 @@
                   </ul>
             </div>
         </section>
-        
-        <script>
-            const dog_result = document.getElementById('dog_result');
-            const dog_btn = document.getElementById('dog_button');
-
-            dog_btn.addEventListener('click', getRandomDog)
-
-            function getRandomDog() {
-                fetch('https://random.dog/woof.json')
-                    .then(res => res.json())
-                    .then(data => {
-                        if(data.url.includes('.mp4')) {
-                            getRandomDog()
-                        } else {
-                            dog_result.innerHTML = `<img 
-                            src="${data.url}"/>`
-                        }
-                    })
-            }
-        </script>
     </main>
 
 </body>
