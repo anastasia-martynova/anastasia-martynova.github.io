@@ -1,0 +1,194 @@
+/* lato-regular - latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/lato-v23-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/lato-v23-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* lato-700 - latin */
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/lato-v23-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/lato-v23-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* lato-900 - latin */
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+         url('../fonts/lato-v23-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/lato-v23-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+html {
+    box-sizing: border-box;
+}  
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Lato';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: black;
+    margin: 0;
+}
+
+/*Intro styles start*/
+
+.wrapper{
+    max-width: 1060px;
+    margin: 0 auto;
+    max-height: 100%;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.header_list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header_item{
+    margin-right: 80px;
+}
+
+.header_link{
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+    text-decoration: none;
+}
+.header_link:hover, .header_link:focus, .header_link:active{
+    opacity: .75;
+}
+.intro{
+    height: 100vh;
+    background: url(../images/background_intro.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 250px;
+
+}
+
+.intro_title{
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 60px;
+    color: white;
+    margin-bottom: 22px;
+}
+
+.intro_subtitle{
+    font-weight: 300;
+    font-size: 30px;
+    color: white;
+    max-width: 546px;
+    list-style-type: circle;
+}
+
+.facts{
+    height: 100vh;
+    background: url(../images/background_intro.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 80px;
+
+}
+
+.facts_title{
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 60px;
+    color: white;
+    margin-bottom: 22px;
+}
+
+.facts_list{
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 50px;
+    color: white;
+    max-width: 546px;
+    list-style-type: circle;
+}
+
+.contacts{
+    height: 100vh;
+    background: url(../images/background_intro.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 200px;
+
+}
+
+.icons_wrapper{
+    text-align: center;
+}
+
+.icons {
+    margin-top: 50px;
+    margin-right: 40px;
+}
+
+.intro_wrapper {
+    position: relative;
+    width: 60%;
+    margin: 0;
+}
+
+.photo_wrapper {
+    position: relative;
+    width: 35%;
+    left: 65%;
+    top: -320px;
+}
+
+.photo {
+    position: relative;
+    width: 100%;
+}
+
+.results {
+    position: relative;
+    font-size: 20px;
+}
+
+#dog_result {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    height: 200px;
+    width: 150px;
+}
+
+#dog_result img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+#dog_button {
+    padding-left: 30px;
+}
+
+
+
+/*Intro styles end*/
